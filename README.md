@@ -24,6 +24,11 @@ En nuestro caso usaremos el modelo de tira de leds programable **WS2813**.
 * 🏎 A2 - Player 3 - Verde
 * 🏎 A3 - Player 4 - Amarillo
 
+
+![Schematics](https://github.com/javimostoles/openledrace/blob/master/openLedRace_4_players.png)
+
+**Imágenes del proyecto**
+
 ![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/schematics_002.jpeg)
 ![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/schematics_003.jpeg)
 
