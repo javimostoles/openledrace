@@ -16,11 +16,11 @@ En nuestro caso usaremos el modelo de tira de leds programable **WS2813**.
 
 **Esquema de conexión**
 
-* 🌈Pin 2 - Led strip (verde)
-* 🔊Pin 3 - Audio
+* 🌈 Pin 2 - Led strip (verde)
+* 🔊 Pin 3 - Audio
 
-* 🏎A0 - Player 1 - Rojo
-* 🏎A1 - Player 2 - Azúl
-* 🏎A2 - Player 3 - Verde
-* 🏎A3 - Player 4 - Amarillo
+* 🏎 A0 - Player 1 - Rojo
+* 🏎 A1 - Player 2 - Azúl
+* 🏎 A2 - Player 3 - Verde
+* 🏎 A3 - Player 4 - Amarillo
 
