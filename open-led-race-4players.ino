@@ -1,5 +1,4 @@
-/*
- * ____                     _      ______ _____    _____
+/** ____                     _      ______ _____    _____
   / __ \                   | |    |  ____|  __ \  |  __ \
  | |  | |_ __   ___ _ __   | |    | |__  | |  | | | |__) |__ _  ___ ___
  | |  | | '_ \ / _ \ '_ \  | |    |  __| | |  | | |  _  // _` |/ __/ _ \
@@ -19,6 +18,8 @@
 
  Code made dirty and fast, next improvements in:
  https://github.com/gbarbarov/led-race
+ https://twitter.com/openledrace
+
 */
 
 #include <Adafruit_NeoPixel.h>
