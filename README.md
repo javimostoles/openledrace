@@ -40,3 +40,8 @@ En nuestro caso usaremos el modelo **WS2813** y la placa Arduino Uno.
 ![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/schematics_002.jpeg)
 ![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/schematics_003.jpeg)
 
+**Versión mejorada con 6 jugadores para el evento #HourOfCode2019**
+![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/HourOfCode2019.jpeg)
+
+
+
