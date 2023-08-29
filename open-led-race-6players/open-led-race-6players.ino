@@ -59,13 +59,13 @@ char const version[] = "0.9.7";
 #define EOL            '\n' // End of Command char used in Protocol
 
 #define COLOR1         track.Color(255,0,0) // RED 
-#define COLOR2         track.Color(0,255,0) // GREEN
+#define COLOR2         track.Color(255,69,0) // ORANGE 
 #define COLOR3         track.Color(255,255,0)  // YELLOW 
-#define COLOR4         track.Color(0,0,255)  // BLUE 
-#define COLOR5         track.Color(255,0,255) // PINK 
-#define COLOR6         track.Color(255,69,0) // ORANGE
+#define COLOR4         track.Color(0,255,0) // GREEN 
+#define COLOR5         track.Color(0,0,255)  // BLUE   
+#define COLOR6         track.Color(255,0,255) // PINK
 
-#define COLOR_RAMP     track.Color(255,255,255)
+#define COLOR_RAMP     track.Color(59, 219, 255)
 #define COLOR_COIN     track.Color(40,34,0)
 #define COLOR_BOXMARKS track.Color(64,64,0)
 #define LED_SEMAPHORE  12 
@@ -233,9 +233,6 @@ void setup() {
     draw_ramp( &tck );
     track.show();
     delay(2000);
-    if ( digitalRead( DIG_CONTROL_1 ) == 0 ) { //retain push switch  on reset for activate FX sound
-                                              SMOTOR=1;
-                                              tone(PIN_AUDIO,100);}
   }
 
   race.cfg.startline  = tck.cfg.race.startline;// true;
@@ -665,13 +662,13 @@ void draw_ramp( track_t* _tck ) {
     byte intensity = 0;
     for( int i = r->init; i <= r->center; ++i ) {
       dist = r->center - r->init;
-      intensity = ( 32 * (i - r->init) ) / dist;
-      track.setPixelColor( i, track.Color( intensity,0,intensity ) );
+      intensity = ( 320 * (i - r->init) ) / dist;
+      track.setPixelColor( i, COLOR_RAMP );
     }
     for( int i = r->center; i <= r->end; ++i ) {
       dist = r->end - r->center;
-      intensity = ( 32 * ( r->end - i ) ) / dist;
-      track.setPixelColor( i, track.Color( intensity,0,intensity ) );
+      intensity = ( 320 * ( r->end - i ) ) / dist;
+      track.setPixelColor( i, COLOR_RAMP );
     }
 }
 

@@ -15,10 +15,10 @@ void param_setdefault( struct cfgparam* cfg ) {
 
     param_option_set(cfg, AUTOSTART_MODE_OPTION, AUTOSTART_MODE); 
 
-    cfg->ramp.init   = 80;
+    cfg->ramp.init   = 80; // COMIENZO DE RAMPA
     cfg->ramp.center = 90;
     cfg->ramp.end    = 100;
-    cfg->ramp.high   = 6;
+    cfg->ramp.high   = 2;
     param_option_set(cfg, SLOPE_MODE_OPTION, SLOPE_ALWAYS_ON);
 
     cfg->track.nled_total = MAXLED;  // MAXLED: Total LED number in the racetrack (default:300 -> 5mt, 60LED/mt Strip)
@@ -28,8 +28,8 @@ void param_setdefault( struct cfgparam* cfg ) {
     cfg->track.box_len    = BOXLEN;
     param_option_set(cfg, BOX_MODE_OPTION, BOX_ALWAYS_ON); 
     
-    cfg->track.kf         = 0.015; // friction constant
-    cfg->track.kg         = 0.006; // gravity constant  - Used in Slope
+    cfg->track.kf         = 0.015; // 0.015 friction constant
+    cfg->track.kg         = 0.003; // 0.006 gravity constant  - Used in Slope
 
     param_option_set(cfg, PLAYER_3_OPTION, PLAYER_3);
     param_option_set(cfg, PLAYER_4_OPTION, PLAYER_4);

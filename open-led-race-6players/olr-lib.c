@@ -70,19 +70,21 @@ void process_main_track( track_t* tck, car_t* car ) {
         struct cfgramp const* r = &tck->cfg.ramp;
         int const pos = (int)car->dist % cfg->nled_main;
         if ( pos >= r->init && pos < r->center )
-        //    car->speed -= cfg->kg * r->high * ( pos - r->init );
-        car->speed -= cfg->kg * r->high ;
+          //  car->speed -= cfg->kg * r->high * ( pos - r->init );
+        // car->speed -= cfg->kg * r->high ;
+           car->speed -= cfg->kg * r->high * 0.55;
         
         if ( pos <= r->end && pos > r->center )
-            //car->speed += cfg->kg * r->high * ( pos - r->center ); 
-            car->speed += cfg->kg * r->high ; 
+            // car->speed += cfg->kg * r->high * ( pos - r->center ); 
+            // car->speed += cfg->kg * r->high ; 
+            car->speed -= cfg->kg * r->high * 0.55;
     } 
 
     if(param_option_is_active(&tck->cfg, BATTERY_MODE_OPTION)){ // Battery Mode ON
        struct cfgbattery const* battery = &tck->cfg.battery;              
        if ( cfg->nled_main-(int)(car->dist) %  cfg->nled_main  == tck->ledcoin 
               &&  controller_getStatus( car->ct ) == 0  //charge battery by push switch over coin             
-             //&& car->speed <= controller_getAccel()
+             && car->speed <= controller_getAccel()
              ) 
           {car->charging=1;};                                  
 
@@ -93,7 +95,7 @@ void process_main_track( track_t* tck, car_t* car ) {
            if (car->battery >100){tck->ledcoin = COIN_RESET;
                                   car->battery=100;
                                   car->charging=0; 
-                                  //car->speed = controller_getAccel()*SPEED_BOOST_SCALER;
+                                  car->speed = controller_getAccel()*SPEED_BOOST_SCALER;
                                   car->speed = 0.1 * battery->speed_boost_scaler;
                                  }; 
           };
@@ -189,7 +191,7 @@ int boxlen_configure( track_t* tck, int box_len, int boxalwaysOn ) {
   if ( boxalwaysOn != 0 && boxalwaysOn != 1 ) return -1;
   if(  box_len <= 0 || box_len >= cfg->nled_total ) return -1;
   cfg->box_len = box_len;
-  //cfg->box_alwaysOn = boxalwaysOn;
+  // cfg->box_alwaysOn = boxalwaysOn;
   param_option_set(&tck->cfg, BOX_MODE_OPTION, (boolean) boxalwaysOn);
   // Update  track->boxactive 
   tck->boxactive = boxalwaysOn; 
