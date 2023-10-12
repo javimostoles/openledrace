@@ -24,24 +24,19 @@ En nuestro caso usaremos el modelo **WS2813** y la placa Arduino Uno.
 
 **Esquema de conexión**
 
-* 🌈 Pin 2 - Led strip (verde)
-* 🔊 Pin 3 - Audio
+🌈 Pin 2 - Led strip (verde)
+🔊 Pin 3 - Audio
 
-* 🏎 A0 - Player 1 - Rojo
-* 🏎 A1 - Player 2 - Azúl
-* 🏎 A2 - Player 3 - Verde
-* 🏎 A3 - Player 4 - Amarillo
+🏎 A0 - Player 1 - Rojo
+🏎 A1 - Player 2 - Naranja
+🏎 A2 - Player 3 - Amarillo
+🏎 A3 - Player 4 - Verde
+🏎 A4 - Player 5 - Azul
+🏎 A5 - Player 6 - Rosa
 
+**Versión mejorada con 6 jugadores para el evento #TRG23 (TarugoConf)**
+![Schematics 6 players](https://github.com/javimostoles/openledrace/blob/master/images/schematics_6_players.png)
 
-![Schematics](https://github.com/javimostoles/openledrace/blob/master/openLedRace_4_players.png)
-
-**Imágenes del proyecto**
-
-![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/schematics_002.jpeg)
-![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/schematics_003.jpeg)
-
-**Versión mejorada con 6 jugadores para el evento #HourOfCode2019**
-![Schematics](https://github.com/javimostoles/openledrace/blob/master/images/HourOfCode2019.jpg)
-
+**Versión mejorada con 6 jugadores para el evento #TRG23 (TarugoConf)**
 
 
