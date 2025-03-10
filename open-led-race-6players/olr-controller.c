@@ -1,10 +1,10 @@
 #include "olr-controller.h"
 
 enum {
-  DELTA_ANALOG = 5,
+  DELTA_ANALOG = 5, 
 };
 
-static float const ACEL = 0.2;
+static float const ACEL = 0.15; // Aceleración 0.2 rápido 0.15 Medio, 0.1 Lento
 
 void controller_setup( void ) { 
   

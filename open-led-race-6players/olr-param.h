@@ -13,8 +13,8 @@ extern "C"{
 // Default values loaded on "D" command received (Serial Protocol) 
 //////////////////////////////////////////////////////////////////
 #define MAXLED          300 
-#define BOXLEN          60 
-#define NUMLAP          5 
+#define BOXLEN          118
+#define NUMLAP          10
 #define BATTERY_MODE    true
 #define AUTOSTART_MODE  true
 #define BOX_ALWAYS_ON   true
@@ -40,7 +40,7 @@ enum cfgparam_option_bit {
 };
 
 enum cfgpar {
-  CFGPARAM_VER = 6, // Change this value (+=1) every time the [cfgparam] struct is modified
+  CFGPARAM_VER = 7, //3 RAMPA Change this value (+=1) every time the [cfgparam] struct is modified
                     // This will force an update with the new [struct] to the settings 
                    // stored in EEPROM with an old (invalid) struct
   LEN_UID = 16,

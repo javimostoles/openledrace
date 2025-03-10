@@ -10,7 +10,7 @@ https://www.hackster.io/gbarbarov/open-led-race-a0331a
 
 https://twitter.com/openledrace
 
-Es un proyecto de software libre para simular una carrera minimalista de coches usando una tira de leds. 
+Es un proyecto de software libre para simular una carrera minimalista de coches usando una tira de leds.
 
 En nuestro caso usaremos el modelo **WS2813** y la placa Arduino Uno.
 
@@ -20,6 +20,8 @@ En nuestro caso usaremos el modelo **WS2813** y la placa Arduino Uno.
 * Placa Arduino Uno
 * Varios pulsadores (tantos como jugadores)
 * Altavoz 8 ohmnios (opcional)
+* 1 Resistencia de 200Ω
+* 1 Diodo led de 7 segmentos para el contador
 * Cables conectores
 
 **Esquema de conexión**
@@ -32,11 +34,8 @@ En nuestro caso usaremos el modelo **WS2813** y la placa Arduino Uno.
 * 🏎 A2 - Player 3 - Amarillo
 * 🏎 A3 - Player 4 - Verde
 * 🏎 A4 - Player 5 - Azul
-* 🏎 A5 - Player 6 - Rosa
+* 🏎 A5 - Player 6 - Morado
 
-**Versión mejorada con 6 jugadores para el evento #TRG23 (TarugoConf)**
+**Versión mejorada con 6 jugadores para el evento #ArduinoDay2025 Madrid
 
-![Schematics 6 players](https://github.com/javimostoles/openledrace/blob/master/images/schematics_6_players.png)
-
-
-
+![Schematics 6 players](https://github.com/javimostoles/openledrace/blob/master/images/schematics_6_players_counter.png)

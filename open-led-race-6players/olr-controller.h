@@ -22,7 +22,7 @@ extern "C"{
 #define PIN_VCC_ADC2   7  
 
 enum ctr_type{
-    NOT_DEFINED = 0,
+    NOT_DEFINED = 0, 
     DIGITAL_MODE,
     ANALOG_MODE,
     DEBUG_MODE,
